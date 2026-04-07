@@ -17,7 +17,7 @@
 html,body{width:100%;height:100%;background:#222;overflow:hidden;}
 body{
   font-family:'Prompt',sans-serif;
-  color:var(--txt);
+  color:#111827;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -43,7 +43,10 @@ header{grid-area:hdr;z-index:10;position:relative;
 .logo{width:4.8vmin;height:4.8vmin;border-radius:50%;background:var(--green);
   display:flex;align-items:center;justify-content:center;
   font-family:'Bebas Neue',sans-serif;font-size:1.6vmin;letter-spacing:.06em;color:#fff;flex-shrink:0;}
-.hc{font-family:'Bebas Neue',sans-serif;font-size:3.4vmin;letter-spacing:.12em;color:var(--txt);}
+.hc{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:3.6vmin;
+}
 .hr{display:flex;align-items:center;gap:2%;}
 .st{text-align:right;}
 .sv{font-family:'Bebas Neue',sans-serif;font-size:2.6vmin;letter-spacing:.06em;color:var(--green);}
@@ -59,8 +62,11 @@ main{grid-area:main;z-index:5;position:relative;
 
 /* ── TEAMS SECTION — top half ── */
 .teams-section{display:flex;flex-direction:column;min-height:0;}
-.slbl{font-size:.68vmin;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--txt3);
-  margin-bottom:.5%;display:flex;align-items:center;gap:.8%;}
+.slbl{
+  font-size:0.85vmin;
+  font-weight:700;
+  color:#374151;
+}
 .slbl::after{content:'';flex:1;height:1.5px;background:var(--border);}
 
 /* 6 columns × 4 rows = 24 cards */
@@ -96,13 +102,16 @@ main{grid-area:main;z-index:5;position:relative;
 .tcard.placed{opacity:.15;transform:scale(.92);background:var(--bg)!important;border-color:var(--border)!important;}
 .tcard-num{font-size:.52vmin;font-weight:600;color:var(--txt3);line-height:1;margin-bottom:.18vmin;}
 .tcard-name{
-  font-size:2.00vmin;font-weight:800;color:var(--txt);
-  line-height:1.28;
-  overflow:hidden;display:-webkit-box;
-  -webkit-line-clamp:2;-webkit-box-orient:vertical;
-  word-break:break-word;
+  font-size:2.2vmin;
+  font-weight:700;
+  color:#111827;
+  line-height:1.35;
 }
-.tcard-prov{font-size:1.00vmin;color:var(--txt3);margin-top:.12vmin;}
+.tcard-prov{
+  font-size:1.1vmin;
+  font-weight:500;
+  color:#4b5563;
+}
 
 /* ── GROUPS SECTION — bottom half ── */
 .groups-section{display:flex;flex-direction:column;min-height:0;}
@@ -140,9 +149,8 @@ main{grid-area:main;z-index:5;position:relative;
   min-width:14%;flex-shrink:0;opacity:.85;
 }
 .gsname{
-  font-size:1.65vmin;font-weight:800;color:var(--txt);flex:1;
-  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
-  line-height:1.2;
+  font-weight:700;
+  letter-spacing:0.01em;
 }
 .gsname.empty{color:var(--border2);font-weight:300;font-size:1.1vmin;letter-spacing:.04em;}
 .gsname.fly{animation:flyIn .45s cubic-bezier(.17,.67,.35,1.4) both;}
@@ -214,7 +222,11 @@ aside{grid-area:side;z-index:5;position:relative;
 footer{grid-area:ftr;z-index:10;position:relative;
   border-top:2px solid var(--border2);background:var(--white);
   display:flex;align-items:center;justify-content:space-between;padding:0 2%;gap:1%;}
-.ftxt{font-size:.72vmin;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--txt3);flex:1;}
+.ftxt{
+  font-size:0.85vmin;
+  font-weight:500;
+  color:#374151;
+}
 .brow{display:flex;gap:.7%;align-items:center;}
 .btn{font-family:'Bebas Neue',sans-serif;font-size:1.55vmin;letter-spacing:.16em;text-transform:uppercase;
   padding:.75vmin 3.2vmin;border-radius:.4vmin;cursor:pointer;border:2px solid transparent;
